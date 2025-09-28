@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #ffffff;
+  --text-primary: #1e1e1e;
+  --text-secondary: #3f3f3f;
+  --women-style-color: #720060;
+  --bg-women-style-color: #fde2ff;
+  --men-style-color: #002772;
+  --bg-men-style-color: #d6e6ff;
+  --bg-men-top: #e0e7ff;
+  --bg-men-bottom: #ffffff;
+  --bg-unavailable-top: #dcdcdc;
+  --unavailable-border-color: #000000;
+  --gray: #ccc;
+  --blue: #002772;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.unavailable-card {
+  width: 1034px;
+  height: 584px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.sad-face-icon {
+  position: absolute;
+  top: 50%;
+  left: 55.8%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: contain;
+}
+
+.unavailable-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-primary);
+  z-index: 2;
+}
+
+.unavailable-next-btn {
+  width: 469px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border: 3px solid var(--unavailable-border-color);
+  border-radius: 4px;
+  color: var(--text-primary);
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.unavailable-next-btn:hover {
+  background-color: #f5f5f5;
+}
+
+h5.price {
+  color: var(--men-style-color);
+}
